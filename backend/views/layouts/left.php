@@ -32,8 +32,8 @@
                 'items' => [
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Склад', 'icon' => ' fa-pie-chart', 'url' => ['/index']],
+                    ['label' => 'Сотрудники', 'icon' => ' fa-black-tie', 'url' => ['/employees/default/index']],
                     ['label' => 'Alert', 'icon' => ' fa-android', 'url' => ['/']],
-                    ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
@@ -41,7 +41,6 @@
                         'icon' => 'share',
                         'url' => '#',
                         'items' => [
-                            ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
                             ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
                             [
                                 'label' => 'Level One',

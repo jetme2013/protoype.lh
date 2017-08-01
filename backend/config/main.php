@@ -12,7 +12,11 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log','debug'],
-    'modules' => [],
+    'modules' => [
+        'employees' => [
+            'class' => 'app\modules\employees\Module',
+        ],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -46,6 +50,7 @@ return [
                 '<action:index|login|logout>' => 'site/<action>',
             ],
         ],
+
 
     ],
     'params' => $params,
