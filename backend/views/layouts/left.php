@@ -31,9 +31,10 @@
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
+                    ['label' => 'Посты', 'icon' => ' fa-android', 'url' => ['/posts']],
                     ['label' => 'Склад', 'icon' => ' fa-pie-chart', 'url' => ['/index']],
                     ['label' => 'Сотрудники', 'icon' => ' fa-black-tie', 'url' => ['/employees/default/index']],
-                    ['label' => 'Alert', 'icon' => ' fa-android', 'url' => ['/']],
+
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [

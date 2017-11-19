@@ -11,7 +11,7 @@ return [
     'name'=> 'prototype adv',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log','debug'],
+    'bootstrap' => ['log','debug','gii'],
     'modules' => [
         'employees' => [
             'class' => 'app\modules\employees\Module',
@@ -47,10 +47,10 @@ return [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
+                //'<action:posts>'=>'posts/<action>',
                 '<action:index|login|logout>' => 'site/<action>',
             ],
         ],
-
 
     ],
     'params' => $params,
